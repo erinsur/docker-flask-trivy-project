@@ -34,8 +34,9 @@ This project demonstrates a complete DevSecOps workflow by containerizing a simp
     ```bash
     docker run -p 5001:5000 my-flask-app
     ```
-
 3.  Access the application in your browser at `http://localhost:5001`.
+
+    > **Note:** If port `5001` is already in use on your machine, you can map any other available port to the container's port `5000`. For example, to use port 8080 on your machine, you would run: `docker run -p 8080:5000 my-flask-app`
 
 ### Running the Security Scan Pipeline
 
